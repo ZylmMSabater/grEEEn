@@ -1,102 +1,92 @@
-# grEEEn
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2149974/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&api_key=5TQGBVEM7FR1IZ4Y&results=60&type=line&update=15"></iframe>
-
-<title>Apps - Plugins - ThingSpeak IoT</title>
+<!DOCTYPE html>
 <html>
-  <head>
-
-  <!-- 
-  
-  NOTE: This plugin will not be visible on public views of a channel. 
-        If you intend to make your channel public, consider using the
-        MATLAB Visualization App to create your visualizations.
-  
-  -->  
-  
-  <title>Google Gauge - ThingSpeak</title>
-
-  <style type="text/css">
-  body { background-color: #32a858; }
-  #container { height: 100%; width: 100%; display: table; }
-  #inner { vertical-align: middle; display: table-cell; }
-  #gauge_div { width: 180px; margin: 0 auto; }
+<head>
+<title>grEEEn Web</title>
+<style>
+  .bg {
+    background-image: url("Golden Pothos BG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 </style>
+</head>
 
 
-  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' integrity="sha384-EaUkI/FiMJtEXWAl0dCczvbFvjfzsIF1UNKGJvu9p5JIG71Kih7/kQJvYbBL7HOn" crossorigin="anonymous"></script>
-<script type='text/javascript' src='https://www.google.com/jsapi'></script>
-<script type='text/javascript'>
-
-  // set your channel id here
-  var channel_id = 2149974;
-  // set your channel's read api key here if necessary
-  var api_key = '5TQGBVEM7FR1IZ4Y';
-  // maximum value for the gauge
-  var max_gauge_value = 1023;
-  // name of the gauge
-  var gauge_name = 'Light Level';
-
-  // global variables
-  var chart, charts, data;
-
-  // load the google gauge visualization
-  google.load('visualization', '1', {packages:['gauge']});
-  google.setOnLoadCallback(initChart);
-
-  // display the data
-  function displayData(point) {
-    data.setValue(0, 0, gauge_name);
-    data.setValue(0, 1, point);
-    chart.draw(data, options);
-  }
-
-  // load the data
-  function loadData() {
-    // variable for the data point
-    var p;
-
-    // get the data from thingspeak
-    $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/feed/last.json?api_key=' + api_key, function(data) {
-
-      // get the data point
-      p = data.field1;
-
-      // if there is a data point display it
-      if (p) {
-        p = Math.round((p / max_gauge_value) * 100);
-        displayData(p);
-      }
-
-    });
-  }
-
-  // initialize the chart
-  function initChart() {
-
-    data = new google.visualization.DataTable();
-    data.addColumn('string', 'Label');
-    data.addColumn('number', 'Value');
-    data.addRows(1);
-
-    chart = new google.visualization.Gauge(document.getElementById('gauge_div'));
-    options = {width: 120, height: 120, redFrom: 90, redTo: 100, yellowFrom:75, yellowTo: 90, minorTicks: 5};
-
-    loadData();
-
-    // load new data every 15 seconds
-    setInterval('loadData()', 15000);
-  }
-
-</script>
+<body style="background-color: #b7cdb8;">
 
 
-  </head>
+<p style="font-family: arial black; font-size:500%; text-align: center; position: relative; top: -0.5em;">
+<img src="https://i.ibb.co/sqcxFXJ/Golden-Pothos.png" alt="Golden Pothos.png" width="153.6" height="153.6"">
 
-  <body>
-    <div id="container">
-      <div id="inner">
-        <div id="gauge_div"></div>
-      </div>
-    </div>
-  </body>
+gr<span style="color: #5370fd;">E</span><span style="color: #f40600;">E</span><span style="color: #4f8c46;">E</span>n
+</p>
+
+<p style="font-family: arial; font-size: 120%; text-align: center;">
+<strong><i>Epipremnum aureum</i> (Golden Pothos) Requirements: </strong><br>
+1. Light: >200ft-c (high-light areas), 75-200ft-c (med.-light), 25-75ft-c (low-light) <br>
+2. Temperature: 65degF (night), 75degF (day) <br>
+3. Relative Humidity: 25-49% <br>
+4. Water: when surface is dry (every 1-2 weeks) <br>
+
+<br><br>
+<style>
+hr {color: white; border-style: solid;}
+</style>
+<hr>
+<br><br>
+</p>
+
+<p style="font-family: arial; font-size:150%; text-align: center;">
+<b>Temperature and Humidity Sensor (AM2320) Readings</b> <br><br>
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2166518/charts/1?bgcolor=%23ffffff&color=%23508c46&dynamic=true&results=60&title=Temperature&type=line&yaxis=Degree+Celcius"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2166518/charts/2?bgcolor=%23ffffff&color=%23508c46&dynamic=true&results=60&title=Humidity&type=line&yaxis=%25+Relative+Humidity"></iframe>
+<br><br>
+</p>
+
+<p style="font-family: arial; font-size:150%; text-align: center;">
+<b>Temperature and Humidity Sensor (AM2320) Indicators</b> <br>
+<span style="font-size: 80%;"><strong>Legend: </strong><br>
+1. Direct Fan: 0 (off), 1 (direct), 2 (oscillating) <br>
+2. Ceiling Fan: 0 (off), 1 (CW, circulates warm air), 2 (CC, pushes cool air) <br>
+3. Humidity Tray: 0 (off), 1 (drain), 2 (pump) <br>
+4. Moisture Absorber Tray: 0 (close), 1 (open) <br>
+<span>
+<br>
+<iframe width="260" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2166518/widgets/676179"></iframe>
+<iframe width="260" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2166518/widgets/676180"></iframe>
+<iframe width="260" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2166518/widgets/676181"></iframe>
+<iframe width="260" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2166518/widgets/676182"></iframe>
+<br>
+
+<p style="font-family: arial; font-size:150%; text-align: center;">
+<b>Light Sensor (BH1750) Readings</b> <br><br>
+
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2149974/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Light+level&type=line&xaxis=Time&yaxis=Lux"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2149974/widgets/676195"></iframe>
+
+<br><br>
+</p>
+
+
+
+<br><br>
+<style>
+hr {color: white; border-style: solid;}
+</style>
+<hr>
+<br><br>
+</p>
+
+<p style="font-family: arial; font-size: 120%; text-align: center;">
+<br>
+About: An indoor plant monitoring application that tracks plant health, state solutions, and measure effects on close environment. Used AM2320, BH1750, and SGP30 sensors, ESP8266 Wi-Fi Modules, STM32F411RE as master, and Thingspeak as server. Chose <i>Epipremnum aureum</i> (Golden Pothos) as it has the most positive effects on indoor environment.
+<br><br>
+(c) John Danielle Castor (jtcastor1@up.edu.ph), Airick Miguel Reyes-Gonzales (@up.edu.ph), Zylm Sabater (@up.edu.ph); June 25, 2023<br>
+<br><br>
+</p>
+
+
+</body>
 </html>
