@@ -1,3 +1,4 @@
+<html>
 <body style="background-color: #b7cdb8;">
 
 <img src="https://i.ibb.co/sqcxFXJ/Golden-Pothos.png" alt="Golden Pothos.png" width="153.6" height="153.6"">
@@ -69,6 +70,7 @@ hr {color: white; border-style: solid;}
 About: An indoor plant monitoring application that tracks plant health, state solutions, and measure effects on close environment. Used AM2320, BH1750, and SGP30 sensors, ESP8266 Wi-Fi Modules, STM32F411RE as master, and Thingspeak as server. Chose <i>Epipremnum aureum</i> (Golden Pothos) as it has the most positive effects on indoor environment.
 <br><br>
 (c) John Danielle Castor (jtcastor1@up.edu.ph), Airick Miguel Reyes-Gonzales (@up.edu.ph), Zylm Sabater (@up.edu.ph); June 25, 2023<br>
+</html>
 <br><br>
 </p>
 
