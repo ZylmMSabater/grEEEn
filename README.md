@@ -1,4 +1,3 @@
-<html>
 <head>
 <title>grEEEn Web</title>
 <style>
