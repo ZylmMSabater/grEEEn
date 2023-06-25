@@ -1,21 +1,8 @@
-<head>
-<title>grEEEn Web</title>
-<style>
-  .bg {
-    background-image: url("Golden Pothos BG.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-</style>
-</head>
-
-
 <body style="background-color: #b7cdb8;">
 
-
-<p style="font-family: arial black; font-size:500%; text-align: center; position: relative; top: -0.5em;">
 <img src="https://i.ibb.co/sqcxFXJ/Golden-Pothos.png" alt="Golden Pothos.png" width="153.6" height="153.6"">
+<p style="font-family: arial black; font-size:500%; text-align: center; position: relative; top: -0.5em;">
+
 
 gr<span style="color: #5370fd;">E</span><span style="color: #f40600;">E</span><span style="color: #4f8c46;">E</span>n
 </p>
