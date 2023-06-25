@@ -11,7 +11,8 @@
 </style>
 </head>
 <body style="background-color: #b7cdb8;">
-
+<br>
+<br>
 <p style="font-family: arial black; font-size:500%; text-align: center; position: relative; top: -0.5em;">
 <img src="https://i.ibb.co/sqcxFXJ/Golden-Pothos.png" alt="Golden Pothos.png" width="153.6" height="153.6" style="background-color: #b7cdb8; vertical-align:middle">
 gr<span style="color: #5370fd;">E</span><span style="color: #f40600;">E</span><span style="color: #4f8c46;">E</span>n
