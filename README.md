@@ -19,7 +19,7 @@
   body { background-color: #ddd; }
   #container { height: 100%; width: 100%; display: table; }
   #inner { vertical-align: middle; display: table-cell; }
-  #gauge_div { width: 120px; margin: 0 auto; }
+  #gauge_div { width: 150px; margin: 0 auto; }
 </style>
 
 
