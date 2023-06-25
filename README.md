@@ -16,10 +16,10 @@
   <title>Google Gauge - ThingSpeak</title>
 
   <style type="text/css">
-  body { background-color: #ddd; }
+  body { background-color: #32a858; }
   #container { height: 100%; width: 100%; display: table; }
   #inner { vertical-align: middle; display: table-cell; }
-  #gauge_div { width: 150px; margin: 0 auto; }
+  #gauge_div { width: 180px; margin: 0 auto; }
 </style>
 
 
