@@ -1,7 +1,7 @@
 <html>
 <body style="background-color: #b7cdb8;">
 
-<img src="https://i.ibb.co/sqcxFXJ/Golden-Pothos.png" alt="Golden Pothos.png" width="153.6" height="153.6"">
+<img src="https://i.ibb.co/sqcxFXJ/Golden-Pothos.png" alt="Golden Pothos.png" width="153.6" height="153.6">
 <p style="font-family: arial black; font-size:500%; text-align: center; position: relative; top: -0.5em;">
 
 
