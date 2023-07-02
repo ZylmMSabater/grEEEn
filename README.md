@@ -32,5 +32,5 @@ hr {color: white; border-style: solid;}
 <hr>
 <br><br>
 </p>
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2202837/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=20&title=Light+level&type=line&xaxis=Time&yaxis=Lux"></iframe>
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2202837/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=20&title=Light+level&type=line&xaxis=Time&yaxis=Lux"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2202837/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=20&title=Test+value&type=line&xaxis=Time&yaxis=CO2"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2202837/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=20&title=Test+value&type=line&xaxis=Time&yaxis=TVOC"></iframe>
